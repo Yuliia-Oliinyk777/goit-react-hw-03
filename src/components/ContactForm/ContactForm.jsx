@@ -22,7 +22,7 @@ const ContactForm = ({ addContact }) => {
     <Formik
       initialValues={{ name: '', number: '' }}
       onSubmit={handleSubmit}
-      validationSchema={addFormSchema} // Правильний ключ
+      validationSchema={addFormSchema}
     >
       <Form className={style.form}>
         <div className={style.fieldWrap}>
@@ -45,7 +45,7 @@ const ContactForm = ({ addContact }) => {
             className={style.formField}
             name="number"
             type="text"
-            placeholder="***-**-**"
+            placeholder="111-11-11"
           />
           <ErrorMessage
             className={style.error}
